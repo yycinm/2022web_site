@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가비아글로벌</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <style>
+        *{margin: 0;padding: 0;}
+        li{list-style: none;}
+        clearfix:after{content: "";display: block;clear: both;}
+        
+        a:link{
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:visited{
+            color: #333;
+        }
+
+        a:hover{
+            color: #333;
+        }
+        /* header  */
+
+        .headerWrap{width: 1440px;background: pink;margin: 0 auto;}
+        .headerWrap>h1{float: left;width: 168px;line-height: 60px;}
+        .headerWrap .navbar{width: 540px;float: right;}
+        .headerWrap .navbar>ul>li{width: 25%;float: left;}
+        .headerWrap .navbar>ul>li>a{line-height: 60px;font-size: 15px;text-align: center;display: block;}
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        /* visual  */
+        .visualWrap{
+            background-image: url(images/210616_bg.jpg);
+            height: 643px;
+        
+        } 
+
+        .visual{
+            padding: 240px;
+            width: 1440px;
+            margin: 0 auto; 
+            height: 643px;
+        }
+
+        .visual>h2{
+            font-size: 50px;
+            color: white;
+        }
+
+        .sec_1st{width: 1440px;margin: 0 auto;;padding-bottom: 100px;}
+        .sec_1st h3{font-size: 40px;text-align: center;}
+
+        .left{float: left;padding: 30px;width: 701px;}
+        .left img{margin: 30px; float: left;}
+        .left h4{font-size: 22px;display: block;padding-bottom: 30px;padding-top: 30px;}
+        .left p{font-size: 18px;color: #7c7c7c;}
+
+        .right{float: right;padding: 30px;width: 701px;}
+        .right img{margin: 30px; float: left;}
+        .right h4{font-size: 22px;display: block;padding-bottom: 30px;padding-top: 30px;}
+        .right p{font-size: 18px;color: #7c7c7c;}
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <headerWrap class="headerWrap clearfix">
+        <h1><img src="images/logo.png" alt=""></h1>
+        <nav class="navbar clearfix">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">아마존입점</a>
+                </li>
+                <li>
+                    <a href="#">알리바바 입점</a>
+                </li>
+                <li>
+                    <a href="#">쇼핑몰 제작</a>
+                </li>
+                <li>
+                    <a href="#">국내몰 운영</a>
+                </li>
+               
+            </ul>
+        </nav>
+       
+    </headerWrap>
+
+    <div class="visualWrap clearfix">
+        <div class="visual">
+            <h2>중소벤처기업진흥공단
+                <br>온라인수출지원사업
+            </h2>
+
+        </div>
+       
+
+    </visualWrap>
+
+    <section class="sec_1st">
+        <div class="sec_1_1">
+            <h3>해외 마켓 전문가가 <br>수출을 도와드립니다</h3>
+            <content class="content clearfix">
+                <div class="left clearfix">
+                    <img src="images/logo_amazon.png" alt="">
+                    <h4>아마존 입점</h4>
+                    <p>전 세계 3억명의 아마존 고객을 대상으로<br>
+                        고객사의 온라인 스토어를 오픈 및 운영 대행</p>
+                </div>
+                <div class="right clearfix">
+                    <img src="images/logo_alibaba.png" alt="">
+                    <h4>알리바바 입점</h4>
+                    <p>글로벌 최대 온라인 B2B 플랫폼 알리바바닷컴의 공식파트너<br>
+                        알리바바 입점 및 운영 대행</p>
+                </div>
+            </content>
+        </div>
+
+    </section>
+</body>
+</html>
