@@ -3,7 +3,7 @@
 body{font-family: 'Nanum Gothic', sans-serif;}
 
 /* header  */
-.headerTopWrap{border-bottom:1px solid #dcdcdc;margin-bottom: ;}
+.headerTopWrap{border-bottom:1px solid #dcdcdc;margin-bottom: 16px;}
 .headerTop{width: 980px;margin: 0 auto;}
 
 .topMenu ul{float: right;}
@@ -15,7 +15,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 .topMenu li:last-child:after{display:none;}
 .topMenu li a{display: block;padding: 7px 10px;font-size: 12px;line-height: 12px;}
 
-#headerWrap h1{display: inline-block;margin: 0 auto;background-color: skyblue;width: 151px;
+#headerWrap h1{;margin: 0 auto;width: 151px;margin-bottom:16px
 }
 #headerWrap h1 a{color: #333;}
 
@@ -39,8 +39,12 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 
 .headerWrap02{background-color: #1D5DA4;height: 46px;}
 .headersub{width: 980px;margin: 0 auto;}
-.headerWrap02 ul{float: left;}
-.headerWrap02 ul>li{float: left;width: calc( 980px / 6); display: block;position: relative;line-height: 46px;}
-.headerWrap02 ul a{color: white; text-align: center;font-size: 15px;float: left;}
-.headersub li:after{content: "";display: block; width: 1px;height: 44px; background: #336DAC;
-position: absolute;top: 1.5px;right: 30px;}
+
+.headersub li{float: left;width: calc( 100% / 6); 
+    border-left: 1px solid #336DAC;
+
+}
+.headerWrap02 li a{color: white; text-align: center;font-size: 15px;display: block;line-height: 46px;}
+.headersub li:last-child{border-right: 1px solid #336DAC;}
+
+.headerWrap02 .headersub li a:hover{background-color:white;color: #333;}
