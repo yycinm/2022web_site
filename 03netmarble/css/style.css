@@ -36,8 +36,13 @@ body{font-family: 'Noto Sans KR', sans-serif;}
     }
 
 .section02{margin-bottom: 200px;}
-.section02 .sec_1st{float: left;margin: 21px}
-.section02 .sec_1st img{margin-bottom: 21px;}
+.section02 .sec_1st{float: left;margin: 21px;
+}
+.section02 .sec_1st:hover img{transform: translate(0, -20px);
+    box-shadow: 20px 20px 20px rgba(0, 0 , 0, 0.1);}
+.section02 .sec_1st:first-child:hover img{transform: translate(0, -20px);
+    box-shadow: -20px 20px 20px rgba(0, 0 , 0, 0.1);}
+.section02 .sec_1st img{margin-bottom: 21px;transition: 0.3s;}
 .section02 .sec_1st h4{font-size: 21px;margin-bottom: 15px;}
 .section02 .sec_1st p{font-size: 15px;letter-spacing: -0.6px;}
 
@@ -61,9 +66,16 @@ background-color: #f0f1f2;border-radius: 50px;}
 
 .secbox{width: 1216px;padding: 32px 0 32px 0;
     }
-    .secbox div{float: left;margin-right: 35px;}
+.secbox div{float: left;margin-right: 35px;transition: 0.3s;}
+.secbox div:hover{transform: translate(0, -20px);
+        box-shadow: 20px,-20px,20px,rgba(0, 0, 0, 1);}
 .secbox .box1{width: 360px;height: 466px;background-color: #fff;
 padding: 32px;position: relative;}
+
+
+
+
+
 
 .secbox .box1 h4{font-size: 21px;letter-spacing: -0.6px;
     margin-bottom: 10px;position: absolute;}
@@ -93,12 +105,29 @@ padding: 32px;position: relative;}
 .secbox .box3 h5{font-size: 13px;letter-spacing: -0.4px;
     font-weight: lighter;color: #BDBDBD;position: absolute;bottom: 42px}
 
+.secbox li{float: left;}
 
-.footerWrap{background-color: #1e1e1e;height: 100%}
-.footerWrap .footer{width: 1280px;margin: 0 auto;padding: 64px 0 64px 0;}
-.footerWrap .footer img{float: left;}
-.footerWrap .footer h6{float: right;}
-.footerWrap .footer h5{}
-.footerWrap .footer li{}
-.footerWrap .footer li a{}
-.footerWrap .footer .icon{}
+.setbox .box1:hover{transform: translate(0, -20px);
+        box-shadow: 0px,0px,20px,rgba(0, 0, 0, 0.5);}
+
+
+
+
+
+.footerWrap{background-color: #1e1e1e;height: 100%;}
+.footerWrap .footer{width: 1280px;margin: 0 auto;padding: 64px 0 64px 0;color: #e1e1e1}
+.footerWrap .footer img {margin-bottom: 40px}
+.footerWrap .footer h5{color: #e1e1e1;font-size: 11px;font-weight: lighter;
+    display: block;margin-bottom: 40px;}
+.footerWrap .footer li{float: left;}
+.footerWrap .footer li:after{content: "";
+    display: block;
+    width: 1px;
+    height: 11px;
+    background: #dcdcdc;
+    position: absolute;
+    bottom: 7px;
+    right: 0;}
+.footerWrap .footer li a{color: #e1e1e1;font-size: 12px;}
+.footerWrap .footer .icon {float: right; }
+.footerWrap .footer .icon img {float: left; padding: 0 10px 0 10px;}
