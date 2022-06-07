@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* html,body{height: 100%;} */
 body{font-family: 'Noto Sans KR', sans-serif;}
 
 .headerWrap{}
@@ -15,13 +16,17 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 
 /* visual  */
 
-.visualWrap {width: 1280px;margin: 0 auto;}
-.visualWrap .txtWrap {position: relative;height: 100%;}
+.visualWrap {}
+.visualWrap .slider{}
+.visualWrap .slider li{height: 100%;width: 100%;}
+
+
+.visualWrap .txtWrap {position: relative;height: 100%;width: 1280px;}
 .visualWrap .txtWrap .txt{
     position: absolute;top:100px;left: 0;}
 .visualWrap .txtWrap .txt h2{font-size: 80px;color: #fff;}
 
-.visualWrap .visual01 p{font-size: 24px;color: #fff;position: absolute;top: -643px;left: 0;}
+.visualWrap .txtWrap .txt p{font-size: 24px;color: #fff;}
 
 .sectionWrap{width: 1280px;margin: 0 auto;margin-bottom: 300px;}
 .sectionWrap .section01{padding: 160px 0 0 0;margin-bottom: 100px;}
