@@ -63,7 +63,7 @@ display: block;}
 
 }
 
-#section .sectionTop{width: 1200px;margin: 0 auto;margin-bottom: 131px;}
+#section .sectionTop{width: 1200px;margin: 0 auto;}
 #section .sectionTop .txtTop{float: left;width: 800px;margin-bottom: 67px}
 
 #section .sectionTop .txtTop>h2{font-size: 45px;font-weight: 200;
@@ -259,7 +259,7 @@ color: #fff;font-weight: 600;}
         display: flex;justify-content: center;align-items: center;
 }
 
-.footer{height: 100%;width: 100%;}
+.footer{width: 100%;}
 .ftftxt02{padding-bottom: 100px;}
 .fottxt02 img{float: left;}
 .fottxt02 .fottxt002{float: right;color: #fff;padding-bottom: 100px;}
