@@ -19,6 +19,13 @@ body{font-family: 'Noto Sans KR', sans-serif;}
 .visualWrap {}
 .visualWrap .slider{width: 1280px;margin: 0 auto;}
 .visualWrap .slider li{height: 100%;width: 100%;}
+.visualWrap .slider li.sItem{
+    height:100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 
 
 .visualWrap .txtWrap {position: relative;width: 1280px;margin: 0 auto;}
