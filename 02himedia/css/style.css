@@ -3,6 +3,7 @@
 body{font-family: 'Nanum Gothic', sans-serif;}
 
 /* header  */
+#headerWrap{position: relative;}
 .headerTopWrap{border-bottom:1px solid #dcdcdc;margin-bottom: 16px;}
 .headerTop{width: 980px;margin: 0 auto;}
 
@@ -23,15 +24,17 @@ body{font-family: 'Nanum Gothic', sans-serif;}
     width: 48px;height: 48px;
     border:1px solid #cdcdcd;
     position: absolute;
-    left: calc ( 50% + ( 980px / 2 ) - 48px );
-    top: 38px;
+    right: 305px;
+    top: 29px;
     cursor: pointer;
+    position: relative;
 
 }
 
 .toggle div{
     width: 21px;height: 2px;background-color: #666;
-    position: absolute;left: calc ( 50% - 10px );
+    position: absolute;
+    left: calc( 50% - 10px );
     top:calc( 50% - 1px )
 }
 .toggle div:first-child{ top:calc( 50% - 9px )}
@@ -131,7 +134,7 @@ padding-top: 19px;float: left;}
 .footerWrap{background-color: #5e5e5e;}
 .footerTop{background-color: #4D4D4D;}
 .container.footer .ftNav{float: left;}
-.container.footer .topMove{float: right ;width: 60px;height: 45px;background-color: #404040;}
+.container.footer .topMove{float: right ;width: 60px;height: 45px;}
 .ftNav li{float: left;position: relative;} 
 .ftNav li:after{content: "";display: block;width: 1px;height: 13px;
     background-color: #ccc;position: absolute;right: 0;top: 17px;} 
@@ -142,7 +145,7 @@ padding-top: 19px;float: left;}
     line-height: 13px;color: #ccc;
 } 
 .container.footer .topMove{float: right;}
-.container.footer .topMove a{display: block;line-height: 45px;padding-top: 11px;}
+.container.footer .topMove a{display: block;line-height: 45px;}
 .container.footer .topMove a img{margin: 0 auto;}
 .container.ftBottom{padding: 20px 0;}
 

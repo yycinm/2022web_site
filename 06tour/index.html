@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>대한민국구석구석</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+</head>
+<script>
+    $(document).ready(function(){
+        var slide = $(".slide01").bxSlider({
+            controls:false
+        });
+        $(".next01").click(function(){
+            slide.goToNextSlide()
+        });
+        $(".prev01").click(function(){
+            slide.goToPrevSlide()
+        });
+        var slide = $(".slide02").bxSlider({
+            controls:false
+        });
+        $(".next02").click(function(){
+            slide.goToNextSlide()
+        });
+        $(".prev02").click(function(){
+            slide.goToPrevSlide()
+        });
+
+    })
+</script>
+<body>
+    <img src="./images/content01.png" alt="" class="bal01">
+    <img src="./images/content02.png" alt="" class="bal02">
+    <img src="./images/content03.png" alt="" class="bal03">
+    <img src="./images/content04.png" alt="" class="bal04">
+    <img src="./images/reallyAir.png" alt="" class="air01">
+    <div id="header">
+        <div class="headerWrap">
+            <a href="#">
+                <img src="./images/logo_summer.png" alt="">
+            </a>
+           <div class="headerser">
+               <form action="#">
+                   <input type="text" name="search" placeholder="어디로, 어떤 여행을 떠날 예정인가요?" class="inf">
+               </form>
+               <img src="./images/ico_travelweek.png" alt="" class="walkpe">
+               <div class="icon">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+           </div>
+        </div>
+        <div class="sns">
+            <ul class="clearfix">
+                <li><a href="#"><img src="./images/ico_sns01.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/ico_sns02.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/ico_sns03.png" alt=""></a></li>
+                <li><a href="#"><img src="./images/ico_sns04.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="headerbot">
+        <div class="headermenu">
+            <div class="navbar">
+                <ul class="clearfix">
+                    <li><a href="#">여행도시</a></li>
+                    <li><a href="#">호텔예약</a></li>
+                    <li><a href="#">렌트카</a></li>
+                    <li><a href="#">여행TIP</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        </div>
+        <div class="headerbox"></div>
+    </div>
+    <div id="section">
+        <div class="secWrap clearfix">
+            <div class="sectop"></div>
+            <div class="secright">
+                <h1>TRAVEL GO</h1>
+                <h2>지금 여행이 떠나고 싶다면?
+                    <br>대한민국 구석구석과 떠나자!
+                </h2>
+            </div>
+            <div class="container">
+                <ul class="clearfix">
+                    <li class="sec01"><a href="#"><img src="images/sec01.png" alt=""></a></li>
+                    <li class="sec02"><a href="#"><img src="images/sec02.png" alt=""></a></li>
+                    <li class="sec03">
+                        <ul class="slide01">
+                            <li><a href="#"><img src="images/sec03_01.png" alt=""></a></li>
+                            <li><a href="#"><img src="images/sec03_02.png" alt=""></a></li>
+                        </ul>
+                    </li>
+                    <li class="sec04">
+                        <ul class="slide02">
+                            <li><a href="#"><img src="images/sec04_1.png" alt=""></a></li>
+                            <li><a href="#"><img src="images/sec04_2.png" alt=""></a></li>
+                            <li><a href="#"><img src="images/sec04_3.png" alt=""></a></li>
+                        </ul>
+
+                    </li>
+                    <li class="sec05">
+                        <img src="images/Frame 10.png" alt="">
+                        <a href="#">오늘의 날씨</a>
+
+                    </li>
+                    <li class="sec6">
+                        <img src="images/sec06.png" alt="">
+                        <a href="#">여행자 후기</a>
+                        
+                    </li>
+                    <li class="sec07"><a href="#"><img src="images/sec07.png" alt=""></a></li>
+                    <li class="sec08"><a href="#"><img src="images/sec08.png" alt=""></a></li>
+                    <li class="sec09"><a href="#"></a></li>
+                    <li class="sec10"><a href="#"><img src="images/sec10.png" alt=""></a></li>
+                </ul>     
+
+            </div>
+
+        </div>
+    </div>
+   
+    
+</body>
+</html>
