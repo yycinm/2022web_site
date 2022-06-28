@@ -19,26 +19,28 @@
 </head>
 <script>
     $(document).ready(function(){
-        var slide = $(".slide01").bxSlider({
+        var slide = $(".slider01").bxSlider({
             controls:false
         });
-        $(".next01").click(function(){
+        $(".next").click(function(){
             slide.goToNextSlide()
         });
-        $(".prev01").click(function(){
+        $(".prev").click(function(){
             slide.goToPrevSlide()
         });
-        var slide = $(".slide02").bxSlider({
-            controls:false
+        
+        
+    })
+        $(document).ready(function(){
+            var slide =$(".slider02").bxSlider({
+        controls:false
         });
         $(".next02").click(function(){
             slide.goToNextSlide()
         });
         $(".prev02").click(function(){
             slide.goToPrevSlide()
-        });
-
-    })
+        })})
 </script>
 <body>
     <img src="./images/content01.png" alt="" class="bal01">
@@ -75,7 +77,18 @@
         <div class="headermenu">
             <div class="navbar">
                 <ul class="clearfix">
-                    <li><a href="#">여행도시</a></li>
+                    <li>
+                        <a href="#">여행도시</a>
+                        <div class="submenu">
+                            <ul class="clearfix">
+                                <li><a href="#">인기</a></li>
+                                <li><a href="#">코스</a></li>
+                                <li><a href="#">축제</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </div>
+                    
+                    </li>
                     <li><a href="#">호텔예약</a></li>
                     <li><a href="#">렌트카</a></li>
                     <li><a href="#">여행TIP</a></li>
@@ -91,7 +104,9 @@
     </div>
     <div id="section">
         <div class="secWrap clearfix">
-            <div class="sectop"></div>
+            <div class="sectop">
+                
+            </div>
             <div class="secright">
                 <h1>TRAVEL GO</h1>
                 <h2>지금 여행이 떠나고 싶다면?
@@ -100,28 +115,46 @@
             </div>
             <div class="container">
                 <ul class="clearfix">
-                    <li class="sec01"><a href="#"><img src="images/sec01.png" alt=""></a></li>
+                    <li class="sec01">
+                        <a href="#"><img src="images/sec01.png" alt=""></a></li>
                     <li class="sec02"><a href="#"><img src="images/sec02.png" alt=""></a></li>
                     <li class="sec03">
-                        <ul class="slide01">
+                        <ul class="slider01">
                             <li><a href="#"><img src="images/sec03_01.png" alt=""></a></li>
                             <li><a href="#"><img src="images/sec03_02.png" alt=""></a></li>
                         </ul>
                     </li>
+                    <div class="prev">
+                        <img src="/images/prev.png" alt="">
+
+                    </div>
+                    <div class="next">
+                        <img src="/images/next.png" alt="">
+
+                    </div>
+            
                     <li class="sec04">
-                        <ul class="slide02">
+                        <ul class="slider02">
                             <li><a href="#"><img src="images/sec04_1.png" alt=""></a></li>
                             <li><a href="#"><img src="images/sec04_2.png" alt=""></a></li>
                             <li><a href="#"><img src="images/sec04_3.png" alt=""></a></li>
                         </ul>
 
+                        <div class="prev02">
+                            <img src="/images/prev.png" alt="">
+    
+                        </div>
+                        <div class="next02">
+                            <img src="/images/next.png" alt="">
+    
+                        </div>
                     </li>
                     <li class="sec05">
                         <img src="images/Frame 10.png" alt="">
                         <a href="#">오늘의 날씨</a>
 
                     </li>
-                    <li class="sec6">
+                    <li class="sec06">
                         <img src="images/sec06.png" alt="">
                         <a href="#">여행자 후기</a>
                         
