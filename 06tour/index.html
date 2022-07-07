@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>대한민국구석구석</title>
+    <meta property="og:title" content="대한민국구석구석" />
+    <meta property="og:image" content="./images/mainphoto.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
@@ -25,6 +27,7 @@
 <script>
     $(document).ready(function (){
         var slide = $(".slide").bxSlider({
+       
             controls:false,
             pagerCustom:".slideTap",
             mode:"vertical",
@@ -58,6 +61,9 @@
 
 
         var slide1 = $(".slider01").bxSlider({
+            auto: true,
+		    speed: 500,
+		    pause: 3000,
             controls: false
            
         });
@@ -71,6 +77,9 @@
 
 
         var slide2 = $(".slider02").bxSlider({
+            auto: true,
+		    speed: 500,
+		    pause: 3000,
             controls: false
         });
         $(".next02").click(function () {
@@ -84,11 +93,7 @@
 
 </script>
 <body>
-    <img src="./images/content01.png" alt="" class="bal01">
-    <img src="./images/content02.png" alt="" class="bal02">
-    <img src="./images/content03.png" alt="" class="bal03">
-    <img src="./images/content04.png" alt="" class="bal04">
-    <img src="./images/reallyAir.png" alt="" class="air01">
+
     <div id="header">
         <div class="headerWrap">
             <a href="./">
@@ -185,6 +190,11 @@
         <div class="headerbox"></div>
     </div>
     <div id="section">
+        <img src="./images/content01.png" alt="" class="bal01">
+        <img src="./images/content02.png" alt="" class="bal02">
+        <img src="./images/content03.png" alt="" class="bal03">
+        <img src="./images/content04.png" alt="" class="bal04">
+        <img src="./images/reallyAir.png" alt="" class="air01">
         <div class="secWrapTop clearfix">
             <div class="secright">
                 <h1>TRAVEL GO</h1>

@@ -24,7 +24,7 @@ body{
 .bal02,
 .bal03,
 .bal04,
-.air01{position: absolute;}
+.air01{position: absolute; z-index: 10;}
 
 .bal01{
     top: 125px;
@@ -248,13 +248,13 @@ overflow: hidden;}
 .sec05{cursor: pointer;}
 .sec05>a{
     font-size: 16px;background-color: #fff;position: absolute;
-    bottom: 272px;
+    top: 33px;
     width: 233px;height: 67px;background-color: rgba(161, 208, 255, 0.5);
     display: flex;justify-content: center;align-items: center;
-    font-size: 25px;font-weight: 600;border-radius: 17px;
+    font-size: 25px;font-weight: 600;
     color: #333;
 }
-.sec05:hover img{transform: scale(1.1);}
+.sec05:hover img{transform: scale(1.2);}
 .sec05:hover a{background-color: rgba(161, 208, 255, 0.8);color: #fff;}
 
 .sec06{cursor: pointer;}
@@ -394,6 +394,10 @@ background: #FFE999}
     /* text-align: center;
     transform: translateY(-55px); */
 }
+.txtWrap{
+    animation: subsec05 2s forwards alternate; 
+
+}
 
 
 .footer{background-color: #E0EFFF;}
@@ -446,8 +450,18 @@ background: #FFE999}
     .subsection05{
         
         background-image: url(../images/sub_subimage004.jpg);
-        background-position: 0 -795px; 
-            
+        background-position: 0 -795px;
+        transition: .3s;
+        
+    }
+    
+    .subsection05 .txtWrap{
+        animation: subsec05 2s forwards alternate; 
+
+    }
+    @keyframes subsec05{
+        from{transform: translateY(0px);}
+        to{transform: translateY(-55px);}
     }
 
     .subtxt{ text-align: center; color: #FFF;
