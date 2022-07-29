@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,46 +9,78 @@
     <title>삼진제약</title>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css"
-    integrity="sha512-303pOWiYlJMbneUN488MYlBISx7PqX8Lo/lllysH56eKO8nWIMEMGRHvkZzfXYrHj4j4j5NtBuWmgPnkLlzFCg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"
-    integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+        integrity="sha512-303pOWiYlJMbneUN488MYlBISx7PqX8Lo/lllysH56eKO8nWIMEMGRHvkZzfXYrHj4j4j5NtBuWmgPnkLlzFCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"
+        integrity="sha512-Hvn3pvXhhG39kmZ8ue3K8hw8obT4rfLXHE5n+IWNCMkR6oV3cfkQNUQqVvX3fNJO/JtFeo/MfLmqp5bqAT+8qg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <link rel="stylesheet" href="css/reset.css">
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
 </head>
+<script>
+     $(document).ready(function () {
+        $(".youtube").colorbox({
+            iframe:true,
+            innerWidth:"75%",
+            innerHeight:"42%"
+        })
+       
+        $(".slide").bxSlider({
+       
+            controls:false,
+            pagerCustom:".slideTap",
+            mode:"vertical",
+            touchEnabled: false,
+            infiniteLoop:false
+        });
+        $(".next").click(function () {
+            slide.goToNextSlide()
+        });
+        $(".prev").click(function () {
+            slide.goToPrevSlide()
+        });
+     })
+</script>
+
 <body>
     <div id="header">
 
         <div class="headerWrap">
             <div class="headerTop container">
                 <a href="#"><img src="./images/logo.png" alt=""></a>
+
                 <div class="headerLeft">
                     <div class="navbar_l">
                         <ul>
                             <li><a href="#">기업정보</a>
-                            <div class="submenu">
-                                <ul>
-                                    <li><a href="#">기업소개</a></li>
-                                    <li><a href="#">회사연혁</a></li>
-                                    <li><a href="#">위치안내</a></li>
-                                    <li><a href="#">투자정보</a></li>
-                                </ul>
-                            </div></li>
+                                <div class="submenu">
+                                    <ul>
+                                        <li><a href="#">기업소개</a></li>
+                                        <li><a href="#">회사연혁</a></li>
+                                        <li><a href="#">위치안내</a></li>
+                                        <li><a href="#">투자정보</a></li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li><a href="#">제품정보</a>
                                 <div class="submenu">
                                     <ul>
                                         <li><a href="#">제품검색</a></li>
                                         <li><a href="#">약국찾기</a></li>
                                         <li><a href="#">제품소식</a></li>
-                       
+
                                     </ul>
-                                </div></li>
+                                </div>
+                            </li>
                             <li><a href="#">연구개발</a>
                                 <div class="submenu">
                                     <ul>
@@ -56,7 +89,8 @@
                                         <li><a href="#">R&D</a></li>
                                         <li><a href="#">주요연구성과</a></li>
                                     </ul>
-                                </div></li>
+                                </div>
+                            </li>
                             <li><a href="#">윤리경영</a>
                                 <div class="submenu">
                                     <ul>
@@ -64,9 +98,10 @@
                                         <li><a href="#">윤리강령</a></li>
                                         <li><a href="#">부패 방지 지침</a></li>
                                         <li><a href="#">CP소개</a></li>
-                              
+
                                     </ul>
-                                </div></li>
+                                </div>
+                            </li>
                             <li><a href="#">홍보센터</a>
                                 <div class="submenu">
                                     <ul>
@@ -75,7 +110,8 @@
                                         <li><a href="#">삼진사보</a></li>
                                         <li><a href="#">브랜드 스토리</a></li>
                                     </ul>
-                                </div></li>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                     <div class="navbar_r">
@@ -90,10 +126,10 @@
                 </div>
             </div>
             <div class="overlay"></div>
-        <div class="navbarClone">
-            <div class="mMenu">
-                <a href="#"><img src="./images/mobile/Frame 68.png" alt="">
-                    <img src="./images/mobile/logo 2.png" alt=""></a>
+            <div class="navbarClone">
+                <div class="mMenu">
+                    <a href="#"><img src="./images/mobile/Frame 68.png" alt="">
+                        <img src="./images/mobile/logo 2.png" alt=""></a>
 
                     <div class="x-btn"><img src="./images/mobile/bi_x.png" alt=""></div>
                     <div class="bot_btn01"><a href="#"><img src="./images/mobile/Group 74.png" alt=""></a></div>
@@ -106,51 +142,278 @@
                     <div class="bot_btn03"><a href="#"><img src="./images/mobile/Group 77.png" alt=""></a></div>
 
 
-                    
-                    
+
+
+                </div>
             </div>
-        </div>
 
         </div>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <!-- #1 -->
-              <div class="swiper-slide">
-                <img src="./images/header_main_01.png" alt="">
-                <div class="txtWrap">
-                    <h2>Health</h2><h3>인류 모두의 건강한 삶, 풍요로운 미래</h3>
+                <!-- #1 -->
+                <div class="swiper-slide">
+                    <img src="./images/header_main_01.png" alt="" class="web">
+                    <img src="./images/mobile/mheader_main_01.png" alt="" class="mob">
+                    <div class="bars">
+                        <div class="bar001"></div>
+                        <div class="bar002"></div>
+                        <div class="bar003"></div>
+                    </div>
+                    <div class="txtWrap">
+                        <h2>Health</h2>
+                        <h3>인류 모두의 건강한 삶, 풍요로운 미래</h3>
+                    </div>
                 </div>
-              </div>
-               <!-- #2 -->
-               <div class="swiper-slide">
-                <img src="./images/header_main_02.png" alt="">
-                <div class="txtWrap">
-                    <h2>Ethics</h2><h3>믿음과 신뢰로 나아가는 삼진제약</h3>
+                <!-- #2 -->
+                <div class="swiper-slide">
+                    <img src="./images/header_main_02.png" alt="" class="web">
+                    <img src="./images/mobile/mheader_main_02.png" alt="" class="mob">
+                    <div class="bars">
+                        <div class="bar001"></div>
+                        <div class="bar002"></div>
+                        <div class="bar003"></div>
+                    </div>
+                    <div class="txtWrap">
+                        <h2>Ethics</h2>
+                        <h3>믿음과 신뢰로 나아가는 삼진제약</h3>
+                    </div>
                 </div>
-              </div>
-               <!-- #3 -->
-               <div class="swiper-slide">
-                <img src="./images/header_main_03.png" alt="">
-                <div class="txtWrap">
-                    <h2>Technology</h2><h3>전문성과 신뢰성을 가진 초일류 제약회사</h3>
+                <!-- #3 -->
+                <div class="swiper-slide">
+                    <img src="./images/header_main_03.png" alt="" class="web">
+                    <img src="./images/mobile/mheader_main_03.png" alt="" class="mob">
+                    <div class="bars">
+                        <div class="bar001"></div>
+                        <div class="bar002"></div>
+                        <div class="bar003"></div>
+                    </div>
+                    <div class="txtWrap">
+                        <h2>Technology</h2>
+                        <h3>전문성과 신뢰성을 가진 초일류 제약회사</h3>
+                    </div>
                 </div>
-              </div>
-              
+
             </div>
             <div class="swiper-scrollbar"></div>
-          </div>
+        </div>
         <script>
             var swiper = new Swiper(".mySwiper", {
-              scrollbar: {
-                el: ".swiper-scrollbar",
-                hide: true,
-              },
+                scrollbar: {
+                    el: ".swiper-scrollbar",
+                    hide: true,
+                },
             });
-          </script>
-        </div>
+            
+        </script>
+
+
+
+
+       
         <script src="js/script.js"></script>
-        <div class="bar00"></div>
+
+    </div>
+    <div id="section">
+            <div class="sectionWrap">
+                <ul>
+                    <li>
+                        <a href="#" class="web">
+
+                            <img src="images/sec01.png" alt="">
+                            <h3>회사소개</h3>
+                        </a>
+
+                        <div class="mo_txt mob">
+                            <div class="mbar"></div>
+                            <h2>기업정보</h2>
+                            <h3>창조하는 마음으로 인류의 건강한 삶을 개척하고
+                                <br>풍요로운 미래를 위하여 전진하는 기업</h3>
+                            <a href="#">view more +</a>
+                            <img src="images/mobile/allmenu_c01 1.png" alt="">
+                        </div>
+                    </li>
+                    
+                    <li style="background-image: url('images/overview_video 1.png')">
+                        
+                   <a href="#"><a href="https://www.youtube.com/embed/0UaoP5ViwVw" class="youtube" title="삼진제약 홍보영상">
+                    <img src="images/Group 6.png" alt=""></a></li>
+                </a>
+                    <li> <div class="swiper mySwiper01">
+                        <div class="swiper-wrapper">
+                            <!-- 1  -->
+                          <div class="swiper-slide">
+                            <div class="sectxtWrap">
+                                <h3>기업소개</h3>
+                                <h4>창조하는 마음으로
+                                    <br> 인류의 건강한 삶을 개척하고
+                                 
+                                <br> 풍요로운 미래를 위하여
+                                <br>  전진하는 기업입니다.</h4>
+                            </div>
+                              
+                        </div>
+                        <!-- 2  -->
+                        <div class="swiper-slide bac">
+                            <img src="images/Polygon 1.png" alt="" class="pol">
+                            <img
+                              src="images/main_creation_thumb_1 1.png"
+                            />
+                          </div>
+                          <!-- 3  -->
+                          <div class="swiper-slide">
+                            <div class="sectxtWrap"> 
+                                <h3>회사연혁</h3>
+                                <h4>삼진제약의 역사는
+                                    <br>1968년 창업 이래
+                                    <br> 반세기 동안 
+                                    <br>제약업계의 명성을 지키며
+                                    <br> 우뚝 서있습니다.
+                                    </h4>
+                               
+                            </div>
+                            
+                          </div>
+                          <!-- 4 -->
+                          <div class="swiper-slide">
+                            <img class="pol" src="images/Polygon 1.png" alt="" >
+                            <img
+                              src="images/main_creation_thumb_2 (1) 1.png"
+                            />
+                          </div>
+                          <!-- 5  -->
+                          <div class="swiper-slide">
+                            <div class="sectxtWrap">
+                                <h3>위치안내</h3>
+                                <h4>고객 가까이에서,
+                                    <br>삼진제약이 전하는
+                                    <br> 새로운 가치와 만나십시오.
+                                    </h4>
+                            </div>
+                           
+                          </div>
+                          <!-- 6  -->
+                          <div class="swiper-slide">
+                            <img src="images/Polygon 1.png" alt="" class="pol">
+                            <img
+                              src="images/main_creation_thumb_3 (1) 1.png"
+                            />
+                          </div>
+                          
+                          
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-scrollbar"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <script>
+                        var swiper = new Swiper(".mySwiper01", {
+                          slidesPerView: 2,
+                          centeredSlides: false,
+                          slidesPerGroupSkip: 0,
+                          grabCursor: true,
+                          keyboard: {
+                            enabled: true,
+                          },
+                          breakpoints: {
+                            100: {
+                              slidesPerView: 2,
+                              slidesPerGroup: 2,
+                              
+                            },
+                          },
+                          scrollbar: {
+                            el: ".swiper-scrollbar",
+                          },
+                          navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                          },
+                          pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                          },
+                        });
+                      </script>
+                    </li>
+                    <li>
+                        <div class="pro">
+
+                            <ul class="slide">
+                                <li>
+    
+                                    <form action="#">
+                                        <input type="text" name="search" placeholder="제품을 검색해주세요" class="inp">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </form>
+                                </li>
+                                <li>
+    
+                                    <form action="#">
+                                        <input type="text" name="search" placeholder="제품을 검색해주세요" class="inp">
+                                        <div class="icon">
+                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                        </div>
+                                    </form>
+                                </li>
+                                
+                            </ul>
+                            <div class="slideTap">
+                                <a href="#" data-slide-index="0" class="active">제품검색 ㅣ</a>
+                                <a href="#" data-slide-index="1">약국검색</a>
+                               
+                            </div>
+                        </div>
+                        <div class="sech">
+
+                    </div>
+                </li>
+                    <li>
+                        <div class="textWrap">
+                            <div class="mo_txt mob">
+                                <div class="mbar"></div>
+                                <h2>기업정보</h2>
+                                
+                                <a href="#">view more +</a>
+                                
+                            </div>
+                            <h3>Creation</h3>
+                            <h4>창조하는 마음으로 인류의 건강한 삶을 개척하고
+                                <br>풍요로운 미래에 도전하는 기업</h4>
+
+                        </div>
+                    </li>
+                    <li><div class="textWrap">
+                        <h3>Pioneering</h3>
+                        <h4>전문성과 신뢰성을 갖춘 
+                            <br>일류 제약 기술을
+                            <br>확보하고 있습니다.</h4>
+
+                    </div></li>
+                    <li><div class="textWrap">
+                        <h3>Clean & Fair Samjin
+                        </h3>
+                        <h4>국제 표준에 맞는 윤리경영시스템을 도입하여
+                            <br>투명경영에 앞장섭니다.</h4>
+
+                    </div></li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li><div class="textWrap">
+                        <h3>Innovative Drug
+                            <br>Development</h3>
+                        <h4>혁신신약 개발을 추구하는 글로벌 제약회사로의 도약</h4>
+
+                    </div></li>
+                </ul>
+
+            </div>
+    </div>
+
 
 
 </body>
+
 </html>
