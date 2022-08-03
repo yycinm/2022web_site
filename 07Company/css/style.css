@@ -331,6 +331,19 @@ display: flex;justify-content: center;align-items: center;}
     .foot_mid li:nth-child(1){padding: 10px 0px;}
     .copyright{position: absolute;left: 0;}
 
+    /* news  */
+    /* .section_news{width: 100%;height: 1000px;position: relative;}
+    .section_news .swiper-slide{position: absolute; width: 100%;height: 1000px}
+    .swiper.mySwiper02{width: 1920px;height: 1000px;} */
+
+    /* .section_news .swiper {
+        width: 50%;
+        height: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+
+
 /********** css responsive  **********/
 @media (max-width: 1399px) {
     .bars{display: none}
