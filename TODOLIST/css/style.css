@@ -1,11 +1,17 @@
 @charset "utf-8";
 
-body,html{height: 100%;padding: 100px;}
+body,html{height: 100%;padding: 100px;
+
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.alldo h2{position: absolute;
+top: 240px; color: white;font-weight: 700;}
 .alldo {
     width: 1000px;
     height: 500px;
     margin: 0 auto;
     padding: 100px;
+    /* border: 1px solid #000; */
     background: rgb(162, 212, 133);
     display: flex;
     justify-content: space-between;
@@ -25,8 +31,14 @@ body,html{height: 100%;padding: 100px;}
     width: 100px;
     padding: 4px;
     border: 0 none;
-    background: #fff;
+    /* background: #fff; */
     border-radius: 5px;
+    background: #008E3B;;
+
+    color:white;
+    letter-spacing: 1px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .mytodo .btn2 {
@@ -38,6 +50,8 @@ body,html{height: 100%;padding: 100px;}
     border: 0 none;
     color: rgb(241, 136, 136);
     border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 .mytodo .inp {
@@ -62,19 +76,23 @@ body,html{height: 100%;padding: 100px;}
     display: flex;
     justify-content: space-between;
     align-items: center;
+    letter-spacing: 1px
 
 }
 
 .item{width: 300px;}
 .item.active {padding: 5px;
-    background: rgb(198, 240, 194);
+    background: linear-gradient(90deg, #ABECD6 0%, #FBED96 100%);
+    border-radius: 3px;
+    font-weight: 600;
 }
 
 /* .iconWrap{width: 100px;height: 100px;} */
 .iconWrap .fa-solid {
     width: 30px;
     height: 30px;
-    color: aquamarine;
+    color: #008E3B;
+    cursor: pointer;
     /* background: #000; */
 }
 .iconWrap{}
