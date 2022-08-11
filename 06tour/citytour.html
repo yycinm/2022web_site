@@ -115,20 +115,56 @@
 
 
         </div>  
-    <div class="subsection sub_back">
-        <div class="subtion">
-            <div class="txtWrap subtxt">
-                <h2 class="fs50">여행도시</h2>
-                <h3 class="fs30">'서천'으로 떠나는 신비한 과학여행!</h3>
-            </div>
-
+        <div class="subVisual company" >
+            <h2>COMPANY</h2>
         </div>
-
-        
-    </div>
-    <div class="visual con border_tb">
-        <img src="images/subpageim.png" alt="">
-    </div>
+    
+        <div class="container sub">
+            <ul class="tab">
+                <li class="active">tab1</li>
+                <li>tab2</li>
+                <li>tab3</li>
+                <li>tab4</li>
+            </ul>
+            <div class="content">
+                <div>1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium unde provident deserunt culpa expedita eum alias perferendis? Officiis, ut repellat!</div>
+                <div>2 Voluptatibus iure dolorem ex consectetur nesciunt soluta voluptate, asperiores iste magni assumenda ducimus adipisci quo? Veniam illum hic dolor voluptatibus!</div>
+                <div>3 Quo, cupiditate. Laboriosam modi amet quam. Ipsum sequi quia quaerat qui, quibusdam consectetur a assumenda quo perspiciatis nihil! Magni, incidunt!</div>
+                <div>4 Ipsam enim expedita asperiores cupiditate nemo ea, labore porro consectetur non illo accusamus beatae, sunt iusto. Unde expedita ducimus molestiae?</div>
+            </div>
+        </div>
+    <script src="js/script.js"></script>
+    <script>
+        nowMenu(0); //depth1
+    
+        //depth2
+        let params = new URLSearchParams(location.search);
+        console.log(params.get("submenu"))
+    
+    
+        function tab(){
+            $(".tab li").click(function(){
+                let i = $(this).index();
+                $(".tab li").removeClass("active");
+                $(this).addClass("active")
+    
+                $(".content div").hide().eq(i).show()
+            })
+        }
+    
+    
+        function views(i){
+            if( i != null){
+                $(".tab li").removeClass("active").eq(i).addClass("active");
+                $(".content div").hide().eq(i).show();
+                tab()
+            }else{
+                tab()
+            }
+        }
+    
+        views( params.get("submenu") )
+    </script>
 
     <div class="footer">
         <div class="footerWrap con">

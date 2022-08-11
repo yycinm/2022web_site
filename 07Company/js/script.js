@@ -58,3 +58,12 @@ $(".navbar_m>div").click(function(){
 })
 
 // $(".mMenu>ul>li>a").append("<i class='fa-solid fa-chevron-down'></i>")
+
+
+
+
+function nowMenu(menu){
+    console.log(menu)
+
+    
+}

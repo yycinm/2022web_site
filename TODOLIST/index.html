@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+   <div class="alldo">
+
+       <div class="mytodo">
+           <input type="text" class="inp">
+           <input type="hidden" class="num">
+           <button class="btn1">오늘할일</button>
+           <button class="btn2">전체삭제</button>
+           
+       </div>
+       <ul class="listView">
+   
+          
+           
+   
+       </ul>
+   </div>
+
+    <script>
+        let listData=[
+        {todo: "오늘의 할일1", done: false},
+
+       {todo: "오늘의 할일2", done: false},
+       {todo: "오늘의 할일3", done: true},
+        {todo: "오늘의 할일4", done: false}]
+        ;
+
+        const inp = document.querySelector(".inp")
+        const num = document.querySelector(".num")
+        const btn1 = document.querySelector(".btn1")
+        const btn2 = document.querySelector(".btn2")
+        const listView = document.querySelector(".listView")
+
+        btn1.addEventListener("click",function(){
+            let value = {"todo" :inp.value, "done":false}
+            listData.push(value);
+            console.log(value)
+            view();
+            inp.value = " ";
+
+            
+        })
+        btn2.addEventListener("click",function(){
+            localStorage.clear();
+            listData=[];
+            view();
+       
+
+
+        })
+
+        function view(){
+            let viewList = " ";
+
+            listData.forEach(function(item,i){
+                viewList += `<li>`
+
+                    if(listData[i].done == true){
+                        viewList += `<div class="item active" onclick="done(${i})">${listData[i].todo}</div>`
+                    }else{
+
+                        viewList += `<div class="item" onclick="done(${i})">${listData[i].todo}</div>`
+                    }
+
+                    viewList += `<div class="iconWrap">`
+                
+                    viewList += `<i class="fa-solid fa-calendar-minus" onclick="del(${i})"></i>`
+
+                if(listData[i].done == true){
+                   viewList += `<i class="fa-solid fa-calendar-check" onclick ="done(${i})"></i>` 
+                }else{
+                    viewList += `<i class="fa-solid fa-circle"  onclick ="done(${i})"></i>`
+                }
+
+            viewList += `</div>
+                    </li>`
+                })
+                
+                listView.innerHTML = viewList
+
+            
+            
+            
+            
+            
+            
+        }
+        view();
+        function done(idx){
+            listData[idx].done = !listData[idx].done;
+            view()
+
+        }
+
+        function del(idx){
+            listData.splice(idx,1)
+            localStorage.removeItem(idx)
+            view()
+
+        }
+    </script>
+
+
+</body>
+</html>
