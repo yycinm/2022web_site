@@ -501,22 +501,22 @@ display: flex;justify-content: center;align-items: center;}
 /* sub02  */
 .subVisual.product{background-image: url(../images/sub02.png);}
 .subVisual.pharmacy{background-image: url(../images/sub02_pha.png);}
-.subVisual.notice{background-image: url(../images/sub02_not.jpg);}
+.subVisual.notice{background-image: url(../images/sub02_not.png);}
 /* sub03  */
-.subVisual.introduction{background-image: url(../images/sub03.jpg);}
+.subVisual.introduction{background-image: url(../images/sub03.png);}
 .subVisual.organization{background-image: url(../images/sub03_org.jpg);}
-.subVisual.vision{background-image: url(../images/sub03_vis.jpg);}
-.subVisual.achievements{background-image: url(../images/sub03_ach.jpg);}
+.subVisual.vision{background-image: url(../images/sub03_vis.png);}
+.subVisual.achievements{background-image: url(../images/sub03_ach.png);}
 /* sub04  */
 .subVisual.ceomessage{background-image: url(../images/sub04.png);}
 .subVisual.code{background-image: url(../images/sub04_cod.png);}
-.subVisual.anti_corruption{background-image: url(../images/sub04_ant.png);}
+.subVisual.anti_corruption{background-image: url(../images/sub04_cor.png);}
 .subVisual.cp{background-image: url(../images/sub04_cp.png);}
 /* sub05  */
-.subVisual.news{background-image: url(../images/sub05.jpg);}
-.subVisual.pr{background-image: url(../images/sub05_pr.jpg);}
-.subVisual.sabo{background-image: url(../images/sub05_sab.jpg);}
-/* .subVisual.brandstory{background-image: url(../images/sub05_bra.png);} */
+.subVisual.news{background-image: url(../images/sub05_.png);}
+.subVisual.pr{background-image: url(../images/sub05_pr.png);}
+.subVisual.sabo{background-image: url(../images/sub05_sab.png);}
+.subVisual.brandstory{background-image: url(../images/sub05_bra.png);}
 
 .sub .tab{display: flex;width: 1260px;margin: 0 auto;margin-top: -35px;}
 .sub .tab li{

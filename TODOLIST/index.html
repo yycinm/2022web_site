@@ -14,21 +14,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-   <div class="alldo">
-    <h2>MY TODOLIST</h2>
-       <div class="mytodo">
-           <input type="text" class="inp">
-           <input type="hidden" class="num">
-           <button class="btn1">오늘할일</button>
-           <button class="btn2">전체삭제</button>
-           
-       </div>
-       <ul class="listView">
-   
+    <div class="alldo">
+        <h2>MY TODOLIST</h2>
+      <div class="mytodo">
+          <input type="text" class="inp">
+          <input type="hidden" class="num">
+          <button class="btn1">오늘할일</button>
+          <button class="btn2">전체삭제</button>
           
-           
+      </div>
+      <ul class="listView">
    
-       </ul>
+         
+          
+   
+      </ul>
    </div>
 
     <script>
@@ -51,15 +51,17 @@
             listData.push(value);
             console.log(value)
             view();
-            inp.value = " ";
+            
 
-            if([listData].todo = " "){
-                alert("오늘의 할일을 입력해주세요")
-                
-
+            if(value != ""){
+                listData.push(inp.value);
+                inp.value = "";
+                view();
+            }else{
+                alert("오늘의 할일을 입력해주세요.")
             }
 
-            
+            inp.value = " ";
         })
         btn2.addEventListener("click",function(){
             localStorage.clear();

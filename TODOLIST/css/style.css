@@ -1,39 +1,48 @@
 @charset "utf-8";
 
-body,html{height: 100%;padding: 100px;
+body,html{padding: 20px;
+   
+    _background: yellow
+;
 
     font-family: 'Noto Sans KR', sans-serif;
 }
-.alldo h2{position: absolute;
-top: 240px; color: white;font-weight: 700;}
+.alldo h2{_position: absolute;
+top: 240px; color: white;font-weight: 700;margin-bottom: 30px;}
 .alldo {
-    width: 1000px;
-    height: 500px;
+    width: 90%;
+    height: 100%;
+    
+    
     margin: 0 auto;
-    padding: 100px;
+    padding: 10%;
     /* border: 1px solid #000; */
-    background: rgb(162, 212, 133);
-    display: flex;
+    background: #1C3879;
+    _display: flex;
     justify-content: space-between;
     _align-items: center;
 
     border-radius: 10px;
+    position: relative;
 }
 
 .mytodo {
+    _width: 90%;
+    height: 40%;
     position: relative;
+    
 }
 
 .mytodo .btn1 {
     position: absolute;
     top: 50px;
     left: 0px;
-    width: 100px;
+    width: 40%;
     padding: 4px;
     border: 0 none;
     /* background: #fff; */
     border-radius: 5px;
-    background: #008E3B;;
+    background: #607EAA;;
 
     color:white;
     letter-spacing: 1px;
@@ -44,31 +53,39 @@ top: 240px; color: white;font-weight: 700;}
 .mytodo .btn2 {
     position: absolute;
     top: 50px;
-    left: 129px;
-    width: 100px;
+    right: 36px;
+    width: 40%;
     padding: 4px;
     border: 0 none;
-    color: rgb(241, 136, 136);
+    color: rgb(233, 78, 78);
     border-radius: 5px;
     font-weight: 700;
     cursor: pointer;
+    
+
 }
 
 .mytodo .inp {
     height: 40px;
-    width: 300px;
+    width: 80%;
     border-radius: 5px;
-    border: 0px none
+    border: 0px none;
+    margin-bottom: 100px;
 }
 
 .listView {
-    width: 400px;
-    _height: 200px;
+    _margin-bottom: 50px;
+
+    _width: 80%;
+    _height: 500px;
     padding: 10px;
     _display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(249, 252, 246);
+    background:#F9F5EB;
+    _position: absolute;
+    bottom: 10px;
+    border-radius: 5px;
 }
 
 .listView li {
@@ -76,15 +93,19 @@ top: 240px; color: white;font-weight: 700;}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+
 
 }
 
 .item{width: 300px;}
 .item.active {padding: 5px;
-    background: linear-gradient(90deg, #ABECD6 0%, #FBED96 100%);
+    background: rgba(243, 69, 79, 0.45);
     border-radius: 3px;
     font-weight: 600;
+    width: 70%;
+    height: 5px;
+    display: flex;_justify-content: center;align-items: center;
 }
 
 /* .iconWrap{width: 100px;height: 100px;} */
@@ -93,6 +114,7 @@ top: 240px; color: white;font-weight: 700;}
     height: 30px;
     color: #008E3B;
     cursor: pointer;
-    /* background: #000; */
+    position: relative;
+    
 }
 .iconWrap{}
