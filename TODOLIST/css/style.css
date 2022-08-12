@@ -7,15 +7,16 @@ body,html{padding: 20px;
 
     font-family: 'Noto Sans KR', sans-serif;
 }
-.alldo h2{_position: absolute;
-top: 240px; color: white;font-weight: 700;margin-bottom: 30px;}
+h2{position: absolute;
+top: 0px; color: white;font-weight: 700;margin-bottom: 30px;
+margin-top: 10%;}
 .alldo {
     width: 90%;
     height: 100%;
     
     
     margin: 0 auto;
-    padding: 10%;
+    padding: 20% 10% 10% 10%;
     /* border: 1px solid #000; */
     background: #1C3879;
     _display: flex;
@@ -112,7 +113,7 @@ top: 240px; color: white;font-weight: 700;margin-bottom: 30px;}
 .iconWrap i {
     width: 30px;
     height: 30px;
-    color: #008E3B;
+    color: #2B4865;
     cursor: pointer;
     position: relative;
     

@@ -53,13 +53,7 @@
             view();
             
 
-            if(value != ""){
-                listData.push(inp.value);
-                inp.value = "";
-                view();
-            }else{
-                alert("오늘의 할일을 입력해주세요.")
-            }
+            
 
             inp.value = " ";
         })
@@ -87,12 +81,12 @@
 
                     viewList += `<div class="iconWrap">`
                 
-                    viewList += `<i class="fa-solid fa-calendar-minus" onclick="del(${i})"></i>`
+                    viewList += `<i class="fa-solid fa-circle-minus" onclick="del(${i})"></i>`
 
                 if(listData[i].done == true){
-                   viewList += `<i class="fa-solid fa-calendar-check" onclick ="done(${i})"></i>` 
+                   viewList += `<i class="fa-solid fa-circle" onclick ="done(${i})"></i>` 
                 }else{
-                    viewList += `<i class="fa-solid fa-circle"  onclick ="done(${i})"></i>`
+                    viewList += `<i class="fa-solid fa-face-smile-beam"  onclick ="done(${i})"></i>`
                 }
 
             viewList += `</div>
@@ -101,10 +95,6 @@
                 
                 listView.innerHTML = viewList
 
-            
-            
-            
-            
             
             
         }
