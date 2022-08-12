@@ -501,21 +501,21 @@ display: flex;justify-content: center;align-items: center;}
 /* sub02  */
 .subVisual.product{background-image: url(../images/sub02.png);}
 .subVisual.pharmacy{background-image: url(../images/sub02_pha.png);}
-.subVisual.notice{background-image: url(../images/sub02_not.png);}
+.subVisual.notice{background-image: url(../images/sub02_not.jpg);}
 /* sub03  */
-.subVisual.introduction{background-image: url(../images/sub03.png);}
+.subVisual.introduction{background-image: url(../images/sub03.jpg);}
 .subVisual.organization{background-image: url(../images/sub03_org.jpg);}
-.subVisual.vision{background-image: url(../images/sub03_vis.png);}
-.subVisual.achievements{background-image: url(../images/sub03_ach.png);}
+.subVisual.vision{background-image: url(../images/sub03_vis.jpg);}
+.subVisual.achievements{background-image: url(../images/sub03_ach.jpg);}
 /* sub04  */
 .subVisual.ceomessage{background-image: url(../images/sub04.png);}
 .subVisual.code{background-image: url(../images/sub04_cod.png);}
 .subVisual.anti_corruption{background-image: url(../images/sub04_cor.png);}
 .subVisual.cp{background-image: url(../images/sub04_cp.png);}
 /* sub05  */
-.subVisual.news{background-image: url(../images/sub05_.png);}
-.subVisual.pr{background-image: url(../images/sub05_pr.png);}
-.subVisual.sabo{background-image: url(../images/sub05_sab.png);}
+.subVisual.news{background-image: url(../images/sub05.jpg);}
+.subVisual.pr{background-image: url(../images/sub05_pr.jpg);}
+.subVisual.sabo{background-image: url(../images/sub05_sab.jpg);}
 .subVisual.brandstory{background-image: url(../images/sub05_bra.png);}
 
 .sub .tab{display: flex;width: 1260px;margin: 0 auto;margin-top: -35px;}
@@ -527,13 +527,15 @@ display: flex;justify-content: center;align-items: center;}
     font-weight: 500;
 }
 
-.sub .tab li.active{background:#31A05F; color: white;}
+.tab>li.active a{background:#31A05F; color: white;}
 
 .sub .content div{display: none;
 border: 1px solid #000;
 padding: 30px;
 border-top: 0px none;}
 .sub .content div:nth-child(1){display:block}
+.sub>.tab>li>a{display: block;width: 100%;height: 100%;
+text-align: center;line-height: 70px;}
 
 
 /********** css responsive  **********/
