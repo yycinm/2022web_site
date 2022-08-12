@@ -32,13 +32,8 @@
    </div>
 
     <script>
-        let listData=[
-        {todo: "오늘의 할일1", done: false},
-
-       {todo: "오늘의 할일2", done: false},
-       {todo: "오늘의 할일3", done: true},
-        {todo: "오늘의 할일4", done: false}]
-        ;
+        let listData=[]
+     
 
         const inp = document.querySelector(".inp")
         const num = document.querySelector(".num")
@@ -49,13 +44,17 @@
         btn1.addEventListener("click",function(){
             let value = {"todo" :inp.value, "done":false}
             listData.push(value);
+
+            let todovalue = JSON.stringify(listData)
+            localStorage.setItem("todolist",todovalue)
+            
             console.log(value)
             view();
             
 
             
 
-            inp.value = " ";
+            inp.value = "";
         })
         btn2.addEventListener("click",function(){
             localStorage.clear();
@@ -65,9 +64,22 @@
 
 
         })
-
         function view(){
-            let viewList = " ";
+            if(localStorage.length>0){
+                    let localData = localStorage.getItem("todolist");
+                    listData = JSON.parse(localData);
+                   
+    
+                }
+
+            // listData = [];
+            // for(let i=0;i<localStorage.length;i++){
+            //      listData.push(localStorage.key(i))
+            // }
+            
+            let viewList = "";
+
+            
 
             listData.forEach(function(item,i){
                 viewList += `<li>`
@@ -101,13 +113,16 @@
         view();
         function done(idx){
             listData[idx].done = !listData[idx].done;
+            let todovalue = JSON.stringify(listData)
+            localStorage.setItem("todolist",todovalue)
             view()
 
         }
 
         function del(idx){
             listData.splice(idx,1)
-            localStorage.removeItem(idx)
+            let todovalue = JSON.stringify(listData)
+            localStorage.setItem("todolist",todovalue)
             view()
 
         }
@@ -115,4 +130,3 @@
 
 
 </body>
-</html>
