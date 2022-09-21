@@ -587,8 +587,25 @@
                         </div>
                     </li>
                     <li class="sec05">
-                        <img src="images/Frame 10.png" alt="">
+                        <!-- <img src="images/Frame 10.png" alt=""> -->
                         <a href="#">오늘의 날씨</a>
+                        <select name="inpCity" class="inpCity">
+                            <option value="seoul">서울</option>
+                            <option value="busan">부산</option>
+                            <option value="incheon">인천</option>
+                        </select>
+                        <div class="wInfo">
+                            <h1 class="city">seoul</h1>
+                            <div class="wrap">
+                                <p class="w_id"></p>
+                                <div class="img">icon</div>
+                                <p class="temp">22</p>
+                                <div class="tempWrap">
+                                    <p class="max"></p>
+                                    <p class="min"></p>
+                                </div>
+                            </div>
+                        </div>
             
                     </li>
                     <li class="sec06">
@@ -629,6 +646,47 @@
 
             </div>
         </div>
+ <script>
+     const myid= "c20ceaf4968f148c72340d10360246bc";
+        // let loc ="incheon";
+        loca("seoul");
+        $(".inpCity").change(function(){
+            console.log("test");
+            $(".inpCity option:selected").each(function(){
+                loca($(this).val())
+            })
 
+        })
+        function loca(loc){
+
+            $.ajax({
+                url:" https://api.openweathermap.org/data/2.5/weather?q="+ loc +"&appid=" + myid + "&units=metric&lang=kr",
+                dataType:"json",
+                success:locData
+                
+            })
+        }
+     function locData(data){
+            console.log(data)
+            let city = data.name;
+            let weather = data.weather[0].description;
+;
+            let icon = data.weather[0].icon;
+            let iUrl = `<img src = "https://openweathermap.org/img/wn/${icon}@2x.png">`
+            let temp = data.main.temp+"&#x2103";
+            let tempMa = data.main.temp_max;
+            let tempMi = data.main.temp_min;
+
+
+            $(".city").html(city);
+            $(".w_id").html(weather);
+            $(".img").html(iUrl);
+            $(".temp").html(temp);
+
+            
+            
+            
+        }
+ </script>
 </body>
 </html>

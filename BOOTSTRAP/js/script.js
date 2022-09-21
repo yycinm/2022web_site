@@ -26,6 +26,7 @@ $(document).ready(function(){
             num=1
             $(".swiper-wrapper").css("left",0)
         }
+        console.log(num)
         $(".swiper-wrapper").stop().animate({left:num*-1900},500)
     }
 })

@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+
+.section.page01{
+    width: 100%;height: 100vh;_position: fixed;border: 50px solid rgb(59, 126, 214);
+    _z-index: 10;overflow: hidden;
+    
+    .wrap{
+        position: relative;
+        .video01{
+            position: relative;position: absolute;
+           h2{
+            position: absolute;_color: white;top: 100px;left: 100px;_z-index: 100;
+           }
+        }
+    }
+}

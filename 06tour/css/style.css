@@ -24,7 +24,7 @@ body{
 .bal02,
 .bal03,
 .bal04,
-.air01{position: absolute; z-index: 10;}
+.air01{position: absolute; _z-index: 10;}
 
 .bal01{
     top: 125px;
@@ -245,10 +245,14 @@ overflow: hidden;}
 .container>ul .sec09:hover{background-size: 160%;background-position: -69px 0;}     
 .sec03{position: relative;}
 
-.sec05{cursor: pointer;}
+.sec05{cursor: pointer;background-color: #fff;}
+.sec05 .temp{
+    position: absolute;top: 202px;right: 272px;
+}
 .sec05>a{
-    font-size: 16px;background-color: #fff;position: absolute;
-    top: 33px;
+    font-size: 16px;background-color: #fff;
+    /* position: absolute; */
+    /* top: 33px; */
     width: 233px;height: 67px;background-color: rgba(161, 208, 255, 0.5);
     display: flex;justify-content: center;align-items: center;
     font-size: 25px;font-weight: 600;
@@ -256,6 +260,14 @@ overflow: hidden;}
 }
 .sec05:hover img{transform: scale(1.2);}
 .sec05:hover a{background-color: rgba(161, 208, 255, 0.8);color: #fff;}
+.inpCity{
+    background: #fff;
+    width: 100%;height: 30px;
+    border: 2px solid #1DA2ED;padding: 5px;
+}
+.wInfo{display: flex;justify-content: center;align-items: center
+    ;}
+    
 
 .sec06{cursor: pointer;}
 .sec06>a{

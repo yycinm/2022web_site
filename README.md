@@ -7,4 +7,5 @@
 1. tour https://yycinm.github.io/2022web_site/06tour/
 1. samjin https://yycinm.github.io/2022web_site/07Company/
 1. TODOLIST https://yycinm.github.io/2022web_site/TODOLIST/
-1. TODOLIST https://yycinm.github.io/2022web_site/BOOTSTRAP/
+1. BOOTSTRAP https://yycinm.github.io/2022web_site/BOOTSTRAP/
+1. FULLPAGE https://yycinm.github.io/2022web_site/FULLPAGE/

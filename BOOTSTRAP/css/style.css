@@ -84,4 +84,6 @@ background-repeat: no-repeat;}
 .con-txt{width: 400px;}
 
 #footer{position: relative;}
-.footerWrap{height: 500px;width: 100%;background: #333;display: flex;justify-content: space-between;align-items: center;position: absolute;}
+.footerWrap{height: 500px;width: 100%;background: #333;display: flex;justify-content: space-between;align-items: center;position: absolute;top: 2367px;}
+.bt_menu div{width: 100%;}
+.bot_menu{display: flex;}
