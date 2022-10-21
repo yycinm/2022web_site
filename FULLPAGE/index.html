@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,66 +11,522 @@
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/fullpage.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
     <script src="js/jquery.fullPage.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
     <style>
         /* .bLine{width: 100%;height: 100vh;position: fixed;border: 100px solid #000;z-index: 10;}
         .video01{position: relative;_display: none;}
         .wrap video h2{display: block;}
         .wrap h2{position: absolute;_color: white;top: 100px;left: 100px;z-index: 100;} */
-
     </style>
 </head>
+
 <body>
     <div id="fullpage">
         <div class="section page01">
-            <div class="bLine"></div>
+            <div class="mainTop">
+                <div class="logo">
+                    <h2 class="text-white">TUBAn</h2>
+                </div>
+                <div class="dd">
+                    <h6 class="text-white">3D DIGITAL ANIMATION STUDIO TUBAn</h6>
+                </div>
+                <div class="lang">
+                    <div class="kor active"><a href="#">
+                            <h5 class="fw-bold">KOR</h5>
+                        </a></div>
+                    <div class="lBar"></div>
+                    <div class="eng"><a href="#">
+                            <h5 class="fw-bold">ENG</h5>
+                        </a></div>
+                </div>
+            </div>
+            <div class="vView">
+                <div class="chanels">
+
+                    <div class="ch01 active"><a href="#"><img src="images/ch01__icon.png" alt=""></a></div>
+                    <div class="ch02"><a href="#"><img src="images/ch02__icon.png" alt=""></a></div>
+                    <div class="ch03"><a href="#"><img src="images/ch03__icon.png" alt=""></a></div>
+                    <div class="ch04"><a href="#"><img src="images/ch04__icon.png" alt=""></a></div>
+                    <div class="ch05"><a href="#"><img src="images/ch05__icon.png" alt=""></a></div>
+                    <div class="ch06"><a href="#"><img src="images/ch06__icon.png" alt=""></a></div>
+
+                </div>
+                <div class="ch_txt">
+                    <div class="ch01_txt active">
+                        <h1 class="text-white fw-bold">LARVA</h1>
+                        <h3 class="text-white fw-bold mb-3">때론 다투기도 하고, 함께 위기에 처하기도 하는
+                            <br>귀엽고 발칙한 두 마리의 애벌레 이야기
+                        </h3>
+                        <div class="probtn"><a href="#" class="text-center">
+                                <h4 class="fw-bold">프로젝트보기<span class="text-end">→</span></h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ch02_txt active">
+                        <h1 class="text-white fw-bold">LARVA KIDS</h1>
+                        <h3 class="text-white fw-bold mb-3">라바 키즈랑 노래부르면서 재미있게 놀아봐요!
+                        </h3>
+                        <div class="probtn"><a href="#">
+                                <h4 class="fw-bold">프로젝트보기<span class="text-end">→</span></h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ch03_txt active">
+                        <h1 class="text-white fw-bold">DINOCORE</h1>
+                        <h3 class="text-white fw-bold mb-3">렉스와 함께 피자로 세계정복!
+
+                        </h3>
+                        <div class="probtn"><a href="#" class="text-center">
+                                <h4 class="fw-bold">프로젝트보기<span class="text-end">→</span></h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ch04_txt active">
+                        <h1 class="text-white fw-bold">CAFE WINGCLE</h1>
+                        <h3 class="text-white fw-bold mb-3">신선한 커피와 달콤한 디저트는 카페 윙클에서!
+                        </h3>
+                        <div class="probtn"><a href="#" class="text-center">
+                                <h4 class="fw-bold">프로젝트보기<span class="text-end">→</span></h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ch05_txt active">
+                        <h1 class="text-white fw-bold">ROTARY PARK
+                        </h1>
+                        <h3 class="text-white fw-bold mb-3">악기와 음악으로 몬스터를 공격하라!
+                        </h3>
+                        <div class="probtn"><a href="#" class="text-center">
+                                <h4 class="fw-bold">프로젝트보기<span class="text-end">→</span></h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ch06_txt active">
+                        <h1 class="text-white fw-bold">VICKY & JOHNNY</h1>
+                        <h3 class="text-white fw-bold mb-3">스프링 마을의 사춘기 친구들이 펼치는 즐거운 이야기
+
+                        </h3>
+                        <div class="probtn"><a href="#" class="text-center">
+                                <h4 class="fw-bold">프로젝트보기<span class="text-end">→</span></h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="wrap">
-                <div class="video01">
+                <!-- .wrap w100% h100vh -->
+                <video id="myVideo" data-autoplay muted loop>
+                    <source src="movie/tubavideo01.mp4">
+                    <source src="movie/tubavideo02.mp4">
+                    <source src="movie/tubavideo03.mp4">
+                    <source src="movie/tubavideo04.mp4">
+                    <source src="movie/tubavideo05.mp4">
+                </video>
+                <div class="mb_main">
+                    <div class="mbI01" style="background-image: url(images/mb_main01.jpg)"></div>
+                    <div class="mbI01" style="background-image: url(images/mb_main02.jpg)"></div>
+                    <div class="mbI01" style="background-image: url(images/mb_main03.jpg)"></div>
+                    <div class="mbI01" style="background-image: url(images/mb_main04.jpg)"></div>
+                    <div class="mbI01" style="background-image: url(images/mb_main05.jpg)"></div>
+                    <div class="mbI01" style="background-image: url(images/mb_main06.jpg)"></div>
 
-                    <video src="images/videoplayback (1).mp4" autoplay controls>
-                        
-                    </video>
-                    <h2>Lorem, ipsum dolor.</h2>
                 </div>
-                <div class="video02">
 
-                    <video src="images/videoplayback (3).mp4" autoplay controls>
-                        
-                    </video>
-                    <h2>Lorem, ipsum dolor.</h2>
-                </div>
-                <div class="video03">
+                <!-- <div class="container bg-success txtWrap">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4 offset-md-8 bg-primary vView">
+                                <div class="active"><a href="#">menu1</a></div>
+                                <div><a href="#">menu2</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="scrollBtn">
+                <a href="#m"><img src="images/" alt=""></a>
+            </div>
+            <div class="mLine">
 
-                    <video src="images/videoplayback (4).mp4" autoplay="true" loop="true">
-                        
-                    </video>
-                    <h2>Lorem, ipsum dolor.</h2>
-                </div>
-                <!-- <video src="images/videoplayback (2).mp4" autoplay="true" loop="true"></video>
-                <video src="images/videoplayback (3).mp4" autoplay="true" loop="true"></video>
-                <video src="images/videoplayback (4).mp4" autoplay="true" loop="true"></video>
-                <video src="images/videoplayback (5).mp4" autoplay="true" loop="true"></video> -->
             </div>
         </div>
         <div class="section page02">
-            <div class="container slick">
-                
+            <div class="slideBg" style="background-color: rgb(27, 46, 155);">
+
+                <img src="images/project-bg.png" alt="" class="img-fluid">
+            </div>
+            <div class="mLine02">
+
 
             </div>
+
+            <div class="row slideWrap">
+
+                <div class="slick-d">
+
+                    <div class="slick-list00 img-fluid col-md-3" style="width: 300px;">
+                        <div class="viewBox"></div>
+                        <img src="images/project-thumb-01.jpg" alt="" class="img-fluid">
+                        <h3 class="fw-bold text-white">LARVA</h3>
+                        <p class="mob text-white">때론 다투기도 하고, 함께 위기에 처하기도 하는
+                            귀엽고 발칙한 두 마리의 애벌레 이야기</p>
+                    </div>
+                    <div class="slick-list00 img-fluid col-md-3">
+                        <div class="viewBox"></div>
+                        <img src="images/project-thumb-01b.jpg" alt="" class="img-fluid">
+                        <h3 class="fw-bold text-white">LARVA KIDS</h3>
+                        <p class="mob text-white">라바 키즈랑 노래부르면서 재미있게 놀아봐요!</p>
+                    </div>
+                    <div class="slick-list00 img-fluid col-md-3">
+                        <div class="viewBox"></div>
+                        <img src="images/project-thumb-02.jpg" alt="" class="img-fluid">
+                        <h3 class="fw-bold text-white">DINOCORE</h3>
+                        <p class="mob text-white">렉스와 함께 피자로 세계정복!</p>
+                    </div>
+                    <div class="slick-list00 img-fluid col-md-3">
+                        <div class="viewBox"></div>
+                        <img src="images/project-thumb-03.jpg" alt="" class="img-fluid">
+                        <h3 class="fw-bold text-white">CARE WINGCLE</h3>
+                        <p class="mob text-white">신선한 커피와 달콤한 디저트는 카페 윙클에서!</p>
+                    </div>
+                    <div class="slick-list00 img-fluid col-md-3">
+                        <div class="viewBox"></div>
+                        <img src="images/project-thumb-04.jpg" alt="" class="img-fluid">
+                        <h3 class="fw-bold text-white">POTARY PARK</h3>
+                        <p class="mob text-white">악기와 음악으로 몬스터를 공격하라!</p>
+                    </div>
+                    <div class="slick-list00 img-fluid col-md-3">
+                        <div class="viewBox"></div>
+                        <img src="images/project-thumb-05.jpg" alt="" class="img-fluid">
+                        <h3 class="fw-bold text-white">VICKY&JOHNNY</h3>
+                        <p class="mob text-white">스프링 마을의 사춘기 친구들이 펼치는 즐거운 이야기</p>
+                    </div>
+                </div>
+                <div class="slick-prev01">
+                    <img src="images/prev.svg" alt="">
+                    <img src="images/prev_hover.svg" alt="">
+                </div>
+                <div class="slick-next01">
+                    <img src="images/next.svg" alt="">
+                    <img src="images/next_hover.svg" alt="">
+                </div>
+
+            </div>
+            <div class="slideImg">
+                <div>
+                    <div>
+
+                        <img src="images/projet-jumbo-larva.png" alt="" class="img-fluid">
+                        <h1>PROJECT</h1>
+                        <h3>때론 다투기도 하고, 함께 위기에 처하기도 하는
+                            <br>귀엽고 발칙한 두 마리의 애벌레 이야기
+                        </h3>
+                    </div>
+                    <div>
+
+                        <img src="images/projet-jumbo-larvakids.png" alt="" class="img-fluid">
+                        <h1>PROJECT</h1>
+                        <h3>
+                            PROJECT
+                            라바 키즈랑 노래부르면서 재미있게 놀아봐요!</h3>
+                    </div>
+                    <div>
+
+                        <img src="images/projet-jumbo-dinocore.png" alt="" class="img-fluid">
+                        <h1>PROJECT</h1>
+                        <h3>렉스와 함께 피자로 세계정복!</h3>
+                    </div>
+                    <div>
+
+                        <img src="images/projet-jumbo-wingcle.png" alt="" class="img-fluid">
+                        <h1>PROJECT</h1>
+                        <h3>신선한 커피와 달콤한 디저트는 카페 윙클에서!</h3>
+                    </div>
+                    <div>
+
+                        <img src="images/projet-jumbo-rotary.png" alt="" class="img-fluid">
+                        <h1>PROJECT</h1>
+                        <h3>악기와 음악으로 몬스터를 공격하라!</h3>
+                    </div>
+                    <div>
+
+                        <img src="images/projet-jumbo-vicky.png" alt="" class="img-fluid">
+                        <h1>PROJECT</h1>
+                        <h3>스프링 마을의 사춘기 친구들이 펼치는 즐거운 이야기</h3>
+                    </div>
+
+
+                </div>
+            </div>
+
+
         </div>
+        <div class="section page03">
+            <div class="mLine">
+
+            </div>
+
+
+            <div class="mainTop">
+                <div class="logo">
+                    <h2 class="text-white">TUBAn</h2>
+                </div>
+                <div class="dd">
+                    <h6 class="text-white">3D DIGITAL ANIMATION STUDIO TUBAn</h6>
+                </div>
+                <div class="lang">
+                    <div class="kor active"><a href="#">
+                            <h5 class="fw-bold">KOR</h5>
+                        </a></div>
+                    <div class="lBar"></div>
+                    <div class="eng"><a href="#">
+                            <h5 class="fw-bold">ENG</h5>
+                        </a></div>
+                </div>
+            </div>
+            <h1 class="news_t">NEWS</h1>
+
+            <div class="wrap ">
+                <div class="newsWrap">
+                    <div class="news01">
+                        <img src="images/news01.jpg" alt="" class="mb-2 img-fluid">
+                        <div class="newsTxt">
+                            <h2 class="fw-bold">투바앤, 전자증권 전환 대상 주권 권리자(주주) 보호 및 조치사항 안내</h2>
+                            <h5 class="normal">2019.09.16일 [주식, 사채 등의 전자등록에 관한 법률(이하 &#8220;전자증권법&#8221;)] 이 시행됨에 따라 당사의
+                                전자증권 전환 대상 주권 권리자를 보호하기 위하여 전자증권법 부칙 제 3조 3항에 근거하여 다음의 사항을 통지 합니다.</h5>
+                        </div>
+                        <div class="newsBtn">
+                            <img src="images/next01.svg" alt="">
+                            <img src="images/next01_hover.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="news02">
+                        <img src="images/news02.jpg" alt="" class="mb-2 img-fluid">
+                        <div class="newsTxt">
+                            <h2 class="fw-bold">투바앤, 스마트 옐로우 및 헬로 라바 앱 서비스 중단에 따른 APK 다운로드 안내</h2>
+                            <h5 class="normal">(주) 투바앤에서 제작한 스마트 옐로우와 헬로 라바에 대한 앱서비스가 종료 되었습니다. 이와 관련하여 추가적으로 앱 다운로드가
+                                필요하신 여러분은 하기의 링크를 이용하여 다운로드 후 사용 하시기 바랍니다. 스마트옐로우 앱 다운로드 헬로라바 앱 다운로드 *** 본 다운로드 서비스는
+                                안드로이드 전용 서비스로 애플폰에서는 사용이 불가 합니다. 양해 부탁 드리겠습니다.</h5>
+                        </div>
+                        <div class="newsBtn">
+                            <img src="images/next01.svg" alt="">
+                            <img src="images/next01_hover.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="news02">
+                        <img src="images/news03.jpg" alt="" class="mb-2 img-fluid">
+                        <div class="newsTxt">
+                            <h2 class="fw-bold">투바앤, FC서울과 ‘슈퍼 어린이날’ 이벤트 진행</h2>
+                            <h5 class="normal">&#8211;오는 5일, 글로벌 캐릭터 ‘라바’와 함께 어린이 축구팬을 위한 다양한 행사 열어 &#8211; 라바 애니메이션 상영,
+                                아이라바 치어단 공연, 라바 포토존 운영 및 다양한 라바 선물 증정 &#8211; 라바, 지난해에 이어 올해도 FC서울 대표하는 캐릭터 서포터즈로 활약 글로벌
+                                애니메이션 전문기업 투바앤(TUBAn)의 인기 캐릭터 라바가 어린이날을 맞아 FC서울과 함께 ‘슈퍼 어린이날’ 이벤트를 진행한다. 투바앤과 FC서울은
+                                [&hellip;]</h5>
+                        </div>
+                        <div class="newsBtn">
+                            <img src="images/next01.svg" alt="">
+                            <img src="images/next01_hover.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="news02">
+                        <img src="images/news04.jpg" alt="" class="" class="mb-2 img-fluid">
+                        <div class="newsTxt">
+                            <h2 class="fw-bold">투바앤, 어린이날 맞아 ‘다이노코어’ 시연행사 진행</h2>
+                            <h5 class="normal">&#8211; 전국 대형마트와 완구 전문점에서 다이노코어 에볼루션을 테마로 한 완구 체험존 운영 &#8211; 다이노코어 에볼루션
+                                대표 제품인 메가 디 파이터 티라노와 트리를 직접 만날 수 있어 &#8211; 오는 5월 4일~6일까지 전국 대형마트와 완구 전문점에서 진행 글로벌 애니메이션
+                                전문기업 투바앤(TUBAn)의 변신합체로봇 ‘다이노코어’가 어린이날을 맞아 전국 대형마트와 완구 전문점에서 대규모 시연행사를 진행한다. 투바앤은 다이노코어의
+                                4번째 시리즈인 ‘다이노코어 [&hellip;]</h5>
+                        </div>
+                        <div class="newsBtn">
+                            <img src="images/next01.svg" alt="">
+                            <img src="images/next01_hover.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nebtn">
+                <div class="prev03">
+                    <img src="images/prev03_btn.svg" alt="">
+                    <img src="images/prev03_btn_hover.svg" alt="">
+                </div>
+                <div class="next03">
+                    <img src="images/next03_btn.svg" alt="">
+                    <img src="images/next03_btn_hover.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section page04">
+            <div class="mLine">
+
+            </div>
+
+
+            <div class="mainTop">
+                <div class="logo">
+                    <h2 class="text-white">TUBAn</h2>
+                </div>
+                <div class="dd">
+                    <h6 class="text-white">3D DIGITAL ANIMATION STUDIO TUBAn</h6>
+                </div>
+                <div class="lang">
+                    <div class="kor active"><a href="#">
+                            <h5 class="fw-bold">KOR</h5>
+                        </a></div>
+                    <div class="lBar"></div>
+                    <div class="eng"><a href="#">
+                            <h5 class="fw-bold">ENG</h5>
+                        </a></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="wrap">
+                    <div class="row">
+                        <div class="col-md-6 address">
+                            <div>
+
+                                <img src="images/map_marker.svg" alt="" class="map">
+                                <h3 class="mt-5 mb-3 fw-bold">주소</h3>
+                                <h6 class="mb-4">서울시 종로구 경희궁1길 투바앤빌딩 (우: 03176)</h6>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 callIn">
+
+
+                            <h3 class="mx-3 call text-center fw-bold">전화번호</h3>
+                            <h2>02-512-2550</h2>
+
+                        </div>
+                        <div class="col-md-6 d-flex tContact">
+                            <p class="fw-bolder text-white p-5">CONTACT</p>
+                        </div>
+
+
+
+
+
+                        <div class="col-md-3 fax offset-md-6">
+                            <div>
+
+                                <h3 class="fw-bold">팩스</h3>
+                                <h5>070-4324-2237</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 linbu">
+                            <div class="conta_inner">
+                                <div class="license">
+                                    <h3 class="fw-bold">국내라이선스</h3>
+                                    <h4>docwo73@tubaani.com</h4>
+                                </div>
+                                <div class="business_kor">
+                                    <h3 class="fw-bold">국내영업</h3>
+                                    <h4>scottjr@tubaani.com</h4>
+                                </div>
+                                <div class="license">
+                                    <h3 class="fw-bold">해외영업</h3>
+                                    <h4>global@tubaani.com</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 tMade ms-auto">
+                            <div>
+
+                                <h3 class="fw-bold">제작</h3>
+                                <h5>tuba_sk@tubaani.com</h5>
+                            </div>
+                        </div>
+                        <div class="col-md-3 tEmploy">
+                            <div>
+
+                                <h3 class="fw-bold">채용</h3>
+                                <h5>tuba@tubaani.com</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="section page05 fp-auto-height">
+            <div class="container-fluid">
+                <div class="row mb-5">
+                    <div class="col-4 col-md-2">
+                        <a href="#">[Official] The funniest slapstick - Larva Top 3</a>
+                        <img src="images/footer-youtube-01.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <a href="#">[Official] Strange Inventions - Larva Top 3</a>
+                        <img src="images/footer-youtube-02.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <a href="#">[Official] Jhon TV - 07 - DinoCore</a>
+                        <img src="images/footer-youtube-03.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <a href="#">[Official] Season 1 Episode 7 Teaser - DinoCore</a>
+                        <img src="images/footer-youtube-04.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <a href="#">#Pink and #Yellow A #To_Do_List for their date!</a>
+                        <img src="images/footer-fb-tbumb.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-4 col-md-2">
+                        <a href="#">#Pink and #Yellow A #To_Do_List for their date!</a>
+                        <img src="images/footer-insta-thumb.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="foot_txt row">
+                    <ul class="mb-3 row col-md-6">
+                        <li class=" col-12 col-md-2"><a href="#">YOUTUBE</a></li>
+                        <li class=" col-12 col-md-2"><a href="#">FACEBOOK</a></li>
+                        <li class=" col-12 col-md-2"><a href="#">INSTAGRAM</a></li>
+                        <li class=" col-12 col-md-2"><a href="#">BLOG</a></li>
+                        <li class=" col-12 col-md-2"><a href="#">TISTORY</a></li>
+                    </ul>
+                    <div class="footer_address col-md-12">
+                        <p>주소: 서울시 종로구 경희궁1길 1 투바앤빌딩 (우 : 03176)</p>
+                    </div>
+                    <div class="footer_copyright mb-4 col-md-12">
+                        <h6>COPYRIGHT © TUBAn. ALL RIGHTS RESERVED.</h6>
+                    </div>
+
+                </div>
+                <div class="foot_top bg-success col-md-12">
+                    <div class=topBtn>
+                        <h4 class="text-white text-center fw-bold">
+                            TOP
+                        </h4>
+                        <img src="images/footer-red.png" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
     </div>
 
-<script src="js/script.js"></script>
-</body>
-</html>
-
-
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
