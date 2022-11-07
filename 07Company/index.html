@@ -40,7 +40,8 @@
             pagerCustom: ".slideTap",
             mode: "vertical",
             touchEnabled: false,
-            infiniteLoop: false
+            infiniteLoop: false,
+            auto: true, speed: 500, pause: 1000
         });
         $(".next").click(function () {
             slide.goToNextSlide()
@@ -460,8 +461,10 @@
                 <!-- 9999 -->
                 <li>
                     <a href="#" class="web">
+                        <div class="img09">
 
-                        <img src="images/Vector.png" alt="">
+                            <img src="images/Vector.png" alt="">
+                        </div>
                         <h3>고객지원센터</h3>
                     </a>
 

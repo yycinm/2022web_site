@@ -281,7 +281,7 @@ display: flex;justify-content: center;align-items: center;}
     .sectionWrap>ul>li:nth-child(8)>a>img,.sectionWrap>ul>li:nth-child(9)>a>img{margin-bottom: 20px;margin-right: 0;margin-left: 0;padding: 0;}
     .sectionWrap>ul>li:nth-child(8)>a>h3,.sectionWrap>ul>li:nth-child(9)>a>h3{font-size: 28px;color: white;font-weight: 400;}
     .sectionWrap>ul>li:nth-child(8)>a>h3{color:#0A61B0}
- 
+        .img09{width: 100%;display: flex;justify-content: center;align-items: center;margin-bottom: 30px;}
     /* section_pro  */
 
     .section_pro{
